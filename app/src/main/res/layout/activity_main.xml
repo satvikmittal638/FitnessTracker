@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    <com.shunan.circularprogressbar.CircularProgressBar-->
+<!--        android:id="@+id/stepsProgress"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:dotWidth="30dp"-->
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+<!--        app:maxProgress="100"-->
+<!--        app:progressBackgroundColor="#131112"-->
+<!--        app:progressBackgroundWidth="15dp"-->
+<!--        app:progressColor="#FF8300"-->
+<!--        app:progressValue="50" />-->
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/stepsProgress"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cpb_background_progressbar_color="#E8DEBE"
+        app:cpb_background_progressbar_width="15dp"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progressbar_color="#FF9800"
+        app:cpb_progressbar_width="10dp"
+        app:cpb_progress_max="100"
+         />
+
+    <TextView
+        android:id="@+id/stepsShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/stepsProgress"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="0"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/stepsProgress"
+        app:layout_constraintEnd_toEndOf="@+id/stepsProgress"
+        app:layout_constraintStart_toStartOf="@+id/stepsProgress"
+        app:layout_constraintTop_toTopOf="@+id/stepsProgress" />
+
+    <EditText
+        android:id="@+id/et_goal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stepsProgress"
+        android:layout_marginTop="80dp"
+        android:hint="Goal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stepsProgress" />
+
+    <Button
+        android:id="@+id/btn_setGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_goal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Set Goal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_goal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

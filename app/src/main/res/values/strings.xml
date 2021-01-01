@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FitnessTracker</string>
+
+    <string name="OPEN">OPEN</string>
+    <string name="CLOSE">CLOSE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

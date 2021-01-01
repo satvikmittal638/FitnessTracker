@@ -32,6 +32,7 @@ Animation topAnim,bottomAnim;
             @Override
             public void run() {
                 startActivity(new Intent(SplashScreen.this,MainActivity.class));
+                finish();
             }
         };
 
